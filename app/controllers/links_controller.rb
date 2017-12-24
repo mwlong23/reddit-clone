@@ -4,7 +4,7 @@ class LinksController < ApplicationController
   before_action :authorized_user, only: [:edit, :update, :destroy]
 
   def index
-    @link = Link.all
+    @links = Link.all
   end
 
   def show
