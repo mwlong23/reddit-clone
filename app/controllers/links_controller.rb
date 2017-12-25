@@ -8,7 +8,6 @@ class LinksController < ApplicationController
   end
 
   def show
-
   end
 
   def new
@@ -55,6 +54,10 @@ class LinksController < ApplicationController
 
   def set_link
     @link = Link.find(params[:id])
+  end
+
+  def authorized_user
+    @link = current_user.links.find_by(id: params[:id])
     redirect_to links_path, notice: "Not authorized to edit this link" if @link.nil?
   end
 
