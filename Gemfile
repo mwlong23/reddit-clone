@@ -32,7 +32,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'rails-ujs', '~> 5.1.0.beta1'
-gem 'acts_as_votable'
+gem 'acts_as_votable', '~> 0.11.1'
+gem "font-awesome-rails"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
